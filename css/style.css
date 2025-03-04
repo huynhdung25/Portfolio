@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	scroll-behavior: smooth
+}
+#hero
+{
+	background-image: url("../images/bg1.PNG");
+	background-position: center;  background-size: cover;  background-repeat: repeat;
+	padding-top: 0px
+}
+.avatar {
+	padding-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+.text-purple{
+	color:#61448D
+}
+.text-orange{
+	color: #FF894A
+}
+.bg-darkorange {
+  background-color: #ff894a !important;
+}
+
+a.bg-darkorange:hover, a.bg-darkorange:focus,
+button.bg-darkorange:hover,
+button.bg-darkorange:focus {
+  background-color: #ff894a !important;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 25px;
+    padding: 20px;
+    max-width: 1400px; 
+    margin: auto;
+}
+
+.project {
+    background: #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    color: white;
+    padding: 12px 18px;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.profile-container {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid white;
+}
+
+.project:hover .project-title {
+    opacity: 1;
+}
+
+.project:hover {
+    transform: scale(1.07);
+}
+
+
+
+.coming-soon {
+    opacity: 0.7; /* Make it slightly faded */
+    cursor: default; /* Remove the clickable hand */
+    text-align: center;
+    position: relative;
+}
+
+.coming-soon img {
+    filter: grayscale(80%) blur(2px); /* Make image look "unavailable" */
+}
+
+.coming-soon .project-title {
+    font-weight: bold;
+    color: #fff; /* Greyed out text */
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.btn-outline-third {
+  color: #ff881c;
+  border-color: #ff881c;
+}
+
+.btn-outline-third:hover {
+  color: #ff881c;
+  background-color: #fffbf5;
+  border-color: #fffbf5;
+}
+
+.btn-outline-third:focus, .btn-outline-third.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-outline-third.disabled, .btn-outline-third:disabled {
+  color: #007bff;
+  background-color: transparent;
+}
+
+.btn-outline-third:not(:disabled):not(.disabled):active, .btn-outline-third:not(:disabled):not(.disabled).active,
+.show > .btn-outline-third.dropdown-toggle {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-third:not(:disabled):not(.disabled):active:focus, .btn-outline-third:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-third.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
